@@ -1,0 +1,30 @@
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #807c7c;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.9;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-dots li button {
+  width: 30px;
+  height: 30px;
+}
