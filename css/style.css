@@ -1,0 +1,16 @@
+@use "common/variables";
+@use "common/general";
+@use "common/fonts";
+@use "components/slick";
+@use "components/slick-theme";
+@use "layout/header/header";
+@use "layout/header/burger-menu";
+@use "layout/main/sale";
+@use "layout/main/goods";
+@use "layout/main/slider";
+@use "layout/main/info";
+@use "layout/main/brands";
+@use "layout/main/viewed";
+@use "layout/main/category";
+@use "layout/footer/footer-icons";
+@use "layout/footer/footer";
