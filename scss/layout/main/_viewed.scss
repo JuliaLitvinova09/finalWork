@@ -3,6 +3,7 @@
 .viewed-title {
   font-size: 24px;
   font-weight: 700;
+  margin: 80px auto 38px;
 
   @media screen and (max-width: 1537px) {
   }
@@ -11,6 +12,7 @@
   }
   @include mobile {
     font-size: 14px;
+    margin: 20px auto 10px;
   }
 }
 
@@ -18,56 +20,38 @@
   @include format-flex-space-between;
 }
 
-#wrap-view {
+.slick-initialized .slick-slide {
   @include format-flex-space-between;
-  flex-direction: column;
 }
 
 .wrap-view {
-  overflow: hidden;
+  @include format-flex-space-between;
 
-  vertical-align: top;
   background-color: var(--color-background-white);
 
-  // margin: 0 30px 100px 0;
+  flex-direction: column;
 
   width: 255px;
   height: 363px;
+  padding-top: 10px;
 
   &:hover {
     cursor: pointer;
   }
 
-  // &:last-child {
-  //   margin: 0 0 100px 0;
-  // }
+  @media screen and (max-width: 1200px) {
+    display: flex;
+  }
+
   @include tablet {
-    margin-bottom: 50px;
-
-    width: 230px;
-    height: 328px;
-
     &:last-child {
       margin-bottom: 50px;
-    }
-  }
-  @include mobile {
-    margin-bottom: 10px;
-    width: 220px;
-    height: 290px;
-
-    &:last-child {
-      margin-bottom: 10px;
     }
   }
 
   &__img {
     width: 125px;
     height: 167px;
-
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 5px;
 
     @include mobile {
       width: 100px;
@@ -77,16 +61,15 @@
   &__foto {
     width: 100%;
     height: 100%;
-    margin-top: 10px;
   }
   &__title {
     font-size: 14px;
     line-height: 1.4;
-    // margin: 0 20px;
+    height: 37px;
     max-width: 195px;
     text-align: center;
-    // margin-top: 20px;
-    height: 37px;
+    margin-top: 20px;
+    overflow: hidden;
   }
 
   &__price {
@@ -97,7 +80,6 @@
     font-weight: 500;
 
     @include mobile {
-      margin: 10px 0;
       font-size: 18px;
     }
   }
@@ -119,7 +101,6 @@
       opacity: 0.6;
     }
     @include mobile {
-      // padding: 7px 40px;
       margin-bottom: 15px;
     }
   }

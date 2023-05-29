@@ -2,6 +2,7 @@
 
 .footer {
   @include format-flex-space-between;
+  height: 64px;
 
   @include mini-tablet {
     display: flex;

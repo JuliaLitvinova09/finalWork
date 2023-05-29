@@ -74,33 +74,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// .slick-prev {
-//   left: -25px;
-// }
-// [dir="rtl"] .slick-prev {
-//   right: -25px;
-//   left: auto;
-// }
-// .slick-prev:before {
-//   content: "←";
-// }
-// [dir="rtl"] .slick-prev:before {
-//   content: "→";
-// }
-
-// .slick-next {
-//   right: -25px;
-// }
-// [dir="rtl"] .slick-next {
-//   right: auto;
-//   left: -25px;
-// }
-
 .slick-prev {
-  left: 65px;
+  left: -25px;
 }
 [dir="rtl"] .slick-prev {
-  right: 65px;
+  right: -25px;
   left: auto;
 }
 .slick-prev:before {
@@ -111,19 +89,42 @@
 }
 
 .slick-next {
-  right: 65px;
+  right: -25px;
 }
 [dir="rtl"] .slick-next {
   right: auto;
-  left: 65px;
-}
-.slick-next:before {
-  content: "→";
-}
-[dir="rtl"] .slick-next:before {
-  content: "←";
+  left: -25px;
 }
 
+@media screen and (max-width: 1200px) {
+  .slick-prev {
+    left: -1px;
+  }
+  [dir="rtl"] .slick-prev {
+    right: -1px;
+    left: auto;
+  }
+  .slick-prev:before {
+    content: "←";
+  }
+  [dir="rtl"] .slick-prev:before {
+    content: "→";
+  }
+
+  .slick-next {
+    right: -1px;
+  }
+  [dir="rtl"] .slick-next {
+    right: auto;
+    left: -1px;
+  }
+  .slick-next:before {
+    content: "→";
+  }
+  [dir="rtl"] .slick-next:before {
+    content: "←";
+  }
+}
 @media screen and (max-width: 768px) {
   .slick-prev {
     left: 5px;

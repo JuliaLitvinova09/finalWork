@@ -22,35 +22,10 @@ a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
   // overflow: hidden;
-
-  @media screen and (max-width: 767px) {
-    padding: 0 25px;
-  }
-
-  @media screen and (max-width: 415px) {
-    padding: 0 20px;
-  }
-}
-
-.padding-inner {
-  padding: 20px 405px;
-
-  @media screen and (max-width: 1537px) {
-    padding: 20px 200px;
-  }
-
-  @media screen and (max-width: 1450px) {
-    padding: 20px 100px;
-  }
-  @media screen and (max-width: 767px) {
-    padding: 10px 30px;
-  }
-  @media screen and (max-width: 414px) {
-    padding: 10px 20px;
-  }
 }
 
 .burger-icon {

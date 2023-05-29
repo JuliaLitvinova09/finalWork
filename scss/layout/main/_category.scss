@@ -1,16 +1,20 @@
 @use "../../common/mixins" as *;
 
-.title-cat {
+.title-cat-inner {
   background: var(--color-background-white);
+}
+.title-cat {
   border-bottom: 1px solid #efe;
   padding-top: 60px;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  margin-top: 80px;
 
   @include tablet {
     align-items: flex-start;
     padding-top: 20px;
+    margin-top: 20px;
   }
   @include mobile {
     display: grid;
@@ -19,17 +23,13 @@
 
     padding-bottom: 20px;
     padding-top: 0;
+    margin-top: 10px;
   }
 
   &__nav {
     font-size: 16px;
     font-weight: 500;
     width: 255px;
-
-    &:hover {
-      cursor: pointer;
-      color: var(--color-primary);
-    }
 
     @include mobile {
       font-size: 12px;
