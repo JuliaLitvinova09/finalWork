@@ -8,6 +8,7 @@
 
 .slick-prev:before,
 .slick-next:before {
+  position: absolute;
   color: #807c7c;
 }
 
@@ -27,4 +28,12 @@
 .slick-dots li button {
   width: 30px;
   height: 30px;
+}
+
+.slick-prev:before {
+  left: 35px;
+}
+
+.slick-next:before {
+  right: 35px;
 }
