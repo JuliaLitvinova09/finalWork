@@ -1,12 +1,7 @@
 @use "../../common/mixins" as *;
 
-.sale-img,
-.sale-img-begin,
-.sale-img-end {
-  background-color: var(--color-primary);
-}
-
 .sale-img {
+  background-color: var(--color-primary);
   overflow: hidden;
   position: relative;
   width: 100%;
