@@ -24,21 +24,21 @@ $(document).ready(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          // arrows: true,
+          arrows: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          // arrows: true,
+          arrows: true,
         },
       },
       {
         breakpoint: 415,
         settings: {
           slidesToShow: 1,
-          // arrows: true,
+          arrows: true,
         },
       },
     ],
