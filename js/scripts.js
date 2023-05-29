@@ -18,6 +18,7 @@ $(document).ready(function () {
         breakpoint: 1920,
         settings: {
           slidesToShow: 4,
+          arrows: false,
         },
       },
       {
