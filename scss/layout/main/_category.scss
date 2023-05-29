@@ -1,12 +1,10 @@
 @use "../../common/mixins" as *;
 
-.title-cat,
-.title-cat-begin,
-.title-cat-end {
+.title-cat {
   background: var(--color-background-white);
-}
-
-.title-cat.title-cat-proparty {
+  border-bottom: 1px solid #efe;
+  padding-top: 60px;
+  display: flex;
   align-items: flex-start;
   justify-content: space-around;
 
@@ -22,12 +20,6 @@
     padding-bottom: 20px;
     padding-top: 0;
   }
-}
-
-.title-cat {
-  border-bottom: 1px solid #efe;
-  padding-top: 60px;
-  align-items: flex-start;
 
   &__nav {
     font-size: 16px;

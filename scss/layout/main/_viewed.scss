@@ -1,50 +1,46 @@
 @use "../../common/mixins" as *;
 
 .viewed-title {
-  margin: 180px 0 38px;
-  // margin: 80px 0 38px;
   font-size: 24px;
   font-weight: 700;
 
   @media screen and (max-width: 1537px) {
-    margin-top: 180px;
   }
   @include tablet {
-    margin: 40px 0 18px;
     font-size: 18px;
   }
   @include mobile {
-    margin: 20px 0 10px;
     font-size: 14px;
   }
 }
 
-.wrap-viewed.wrap-viewed-property {
-  // overflow: hidden;
-  justify-content: space-between;
+.wrap-viewed {
+  @include format-flex-space-between;
+}
+
+#wrap-view {
+  @include format-flex-space-between;
+  flex-direction: column;
 }
 
 .wrap-view {
-  border: none;
+  overflow: hidden;
 
   vertical-align: top;
   background-color: var(--color-background-white);
 
-  flex-direction: column;
-  margin: 0 30px 100px 0;
+  // margin: 0 30px 100px 0;
 
   width: 255px;
   height: 363px;
-  // max-width: 100%;
-  // max-height: 100%;
 
   &:hover {
     cursor: pointer;
   }
 
-  &:last-child {
-    margin: 0 0 100px 0;
-  }
+  // &:last-child {
+  //   margin: 0 0 100px 0;
+  // }
   @include tablet {
     margin-bottom: 50px;
 
@@ -86,17 +82,17 @@
   &__title {
     font-size: 14px;
     line-height: 1.4;
-    margin: 0 20px;
+    // margin: 0 20px;
     max-width: 195px;
     text-align: center;
-    margin-top: 20px;
-    height: 32px;
+    // margin-top: 20px;
+    height: 37px;
   }
 
   &__price {
     font-size: 21px;
     line-height: 1.2;
-    margin: 20px 0;
+
     text-align: center;
     font-weight: 500;
 
@@ -109,20 +105,21 @@
     border: none;
     background: none;
     background: var(--color-primary);
-    padding: 9px 53px;
+    width: 130px;
+    height: 35px;
+
     font-size: 14px;
     color: #fff;
     border-radius: 30px;
     cursor: pointer;
-    margin: 0 auto;
-    display: flex;
+
     margin-bottom: 25px;
 
     &:hover {
       opacity: 0.6;
     }
     @include mobile {
-      padding: 7px 40px;
+      // padding: 7px 40px;
       margin-bottom: 15px;
     }
   }

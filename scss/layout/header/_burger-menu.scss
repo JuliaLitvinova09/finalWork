@@ -48,7 +48,7 @@
   } // .heder .burger-icon
   ///////////////////////////////////////////////////////
   ///
-  .header-nav.header-nav-property {
+  .header-nav {
     display: flex;
 
     justify-content: left;
@@ -57,10 +57,10 @@
     top: 40px;
     right: 0;
     width: 50%;
-    height: 40%;
+    height: 100%;
     // padding: 20px;
     background: #92918c;
-    opacity: 0.9;
+    align-items: start;
 
     z-index: 99;
 
@@ -68,7 +68,7 @@
       flex-direction: column;
       align-items: start;
       justify-content: stretch;
-      margin-top: 30px;
+      // margin-top: 30px;
 
       & li {
         margin: 0;

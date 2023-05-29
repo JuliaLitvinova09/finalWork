@@ -1,13 +1,9 @@
 @use "../../common/mixins" as *;
 
-.footer-icons,
-.footer-icons-begin,
-.footer-icons-end {
-  background: var(--color-background-white);
-}
-
 .footer-icons {
-  justify-content: space-between;
+  @include format-flex-space-between;
+  background: var(--color-background-white);
+
   &__icon {
     @include format-flex-center;
     color: var(--color-primary);

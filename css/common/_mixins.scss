@@ -1,0 +1,2 @@
+@mixin format-flex-center{display:flex;justify-content:center;align-items:center}@mixin format-flex-space-between{display:flex;justify-content:space-between;align-items:center}@mixin tablet{@media screen and (max-width: 768px) {
+    @content;}

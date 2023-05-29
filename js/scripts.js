@@ -10,7 +10,7 @@ $(document).ready(function () {
   $(".carousel").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: false,
 
     responsive: [
@@ -19,30 +19,26 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
         },
+      },
+      {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
+          // arrows: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          arrows: false,
+          // arrows: true,
         },
       },
       {
-        breakpoint: 431,
+        breakpoint: 415,
         settings: {
-          slidesToShow: 2,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 398,
-        settings: {
-          slidesToShow: 1.5,
-          arrows: false,
+          slidesToShow: 1,
+          // arrows: true,
         },
       },
     ],

@@ -1,7 +1,8 @@
 @use "../../common/mixins" as *;
 
 .goods-title {
-  margin: 80px 0 38px 0;
+  margin: 10px 0 0 0;
+  // margin: 80px 0 38px 0;
   font-size: 24px;
   font-weight: 700;
 
@@ -15,37 +16,39 @@
   }
 }
 
-.wrap-goods.wrap-goods-property {
-  justify-content: space-between;
+.wrap-goods {
+  @include format-flex-space-between;
 
   @include mobile {
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 
+#wrap-good {
+  @include format-flex-space-between;
+}
 .wrap-good {
-  border: none;
+  @include format-flex-space-between;
 
-  vertical-align: top;
   background-color: var(--color-background-white);
 
   flex-direction: column;
-  margin: 0 30px 100px 0;
 
   width: 255px;
   height: 363px;
-  // max-width: 100%;
-  // max-height: 100%;
 
   &:hover {
     cursor: pointer;
   }
 
-  &:last-child {
-    margin: 0 0 100px 0;
+  @media screen and (max-width: 1200px) {
+    display: flex;
   }
+  // &:last-child {
+  //   margin: 0 0 10px 0;
+  // }
   @include tablet {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     width: 230px;
     height: 328px;
@@ -58,18 +61,15 @@
     width: 220px;
     height: 290px;
 
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 10px;
-    }
+    // margin-bottom: 10px;
+    // &:last-child {
+    //   // margin-bottom: 10px;
+    // }
   }
 
   &__img {
     width: 125px;
     height: 167px;
-
-    overflow: hidden;
-    margin: 0 auto;
 
     @include mobile {
       width: 100px;
@@ -84,22 +84,22 @@
   &__title {
     font-size: 14px;
     line-height: 1.4;
-    height: 32px;
-    margin: 0 20px;
+    height: 37px;
     max-width: 195px;
     text-align: center;
     margin-top: 20px;
+    overflow: hidden;
   }
 
   &__price {
     font-size: 21px;
     line-height: 1.2;
-    margin: 20px 0;
+
     text-align: center;
     font-weight: 500;
 
     @include mobile {
-      margin: 20px 0;
+      // margin: 20px 0;
       font-size: 18px;
     }
   }
@@ -107,20 +107,21 @@
     border: none;
     background: none;
     background: var(--color-primary);
-    padding: 9px 53px;
+    width: 130px;
+    height: 35px;
+
     font-size: 14px;
     color: #fff;
     border-radius: 30px;
     cursor: pointer;
-    margin: 0 auto;
-    display: flex;
+
     margin-bottom: 25px;
 
     &:hover {
       opacity: 0.6;
     }
     @include mobile {
-      padding: 7px 40px;
+      // padding: 7px 40px;
       margin-bottom: 15px;
     }
   }
