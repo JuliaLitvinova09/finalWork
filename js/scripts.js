@@ -7,6 +7,7 @@ $(document).ready(function () {
   if (screen.width >= 1200) {
     document.querySelector(" .carousel").classList.remove("carousel");
   }
+
   $(".carousel").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
